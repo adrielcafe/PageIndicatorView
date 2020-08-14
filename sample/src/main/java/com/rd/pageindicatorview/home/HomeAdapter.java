@@ -17,6 +17,7 @@ class HomeAdapter extends PagerAdapter {
         this.viewList = new ArrayList<>();
     }
 
+    @NonNull
     @Override
     public Object instantiateItem(ViewGroup collection, int position) {
         View view = viewList.get(position);
@@ -25,7 +26,7 @@ class HomeAdapter extends PagerAdapter {
     }
 
     @Override
-    public void destroyItem(ViewGroup collection, int position, Object view) {
+    public void destroyItem(ViewGroup collection, int position, @NonNull Object view) {
         collection.removeView((View) view);
     }
 
@@ -35,12 +36,12 @@ class HomeAdapter extends PagerAdapter {
     }
 
     @Override
-    public boolean isViewFromObject(View view, Object object) {
+    public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
         return view == object;
     }
 
     @Override
-    public int getItemPosition(Object object) {
+    public int getItemPosition(@NonNull Object object) {
         return POSITION_NONE;
     }
 

@@ -40,12 +40,9 @@ public class DrawController {
 			return;
 		}
 
-		switch (event.getAction()) {
-			case MotionEvent.ACTION_UP:
-				onIndicatorTouched(event.getX(), event.getY());
-				break;
-			default:
-		}
+        if (event.getAction() == MotionEvent.ACTION_UP) {
+            onIndicatorTouched(event.getX(), event.getY());
+        }
 	}
 
 	private void onIndicatorTouched(float x, float y) {
