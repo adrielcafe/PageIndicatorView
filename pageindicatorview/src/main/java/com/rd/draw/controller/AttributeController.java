@@ -75,7 +75,7 @@ public class AttributeController {
 
     private void initAnimationAttribute(@NonNull TypedArray typedArray) {
         boolean interactiveAnimation = typedArray.getBoolean(R.styleable.PageIndicatorView_piv_interactiveAnimation, false);
-        long animationDuration = (long) typedArray.getInt(R.styleable.PageIndicatorView_piv_animationDuration, BaseAnimation.DEFAULT_ANIMATION_TIME);
+        long animationDuration = typedArray.getInt(R.styleable.PageIndicatorView_piv_animationDuration, BaseAnimation.DEFAULT_ANIMATION_TIME);
         if (animationDuration < 0) {
             animationDuration = 0;
         }
@@ -87,7 +87,7 @@ public class AttributeController {
         RtlMode rtlMode = getRtlMode(rtlIndex);
 
         boolean fadeOnIdle = typedArray.getBoolean(R.styleable.PageIndicatorView_piv_fadeOnIdle, false);
-        long idleDuration = (long) typedArray.getInt(R.styleable.PageIndicatorView_piv_idleDuration, DEFAULT_IDLE_DURATION);
+        long idleDuration = typedArray.getInt(R.styleable.PageIndicatorView_piv_idleDuration, DEFAULT_IDLE_DURATION);
 
         indicator.setAnimationDuration(animationDuration);
         indicator.setInteractiveAnimation(interactiveAnimation);

@@ -9,7 +9,6 @@ import com.rd.draw.data.Orientation;
 
 public class CoordinatesUtils {
 
-	@SuppressWarnings("UnnecessaryLocalVariable")
 	public static int getCoordinate(@Nullable Indicator indicator, int position) {
 		if (indicator == null) {
 			return 0;
@@ -22,7 +21,6 @@ public class CoordinatesUtils {
 		}
 	}
 
-	@SuppressWarnings("UnnecessaryLocalVariable")
 	public static int getXCoordinate(@Nullable Indicator indicator, int position) {
 		if (indicator == null) {
 			return 0;

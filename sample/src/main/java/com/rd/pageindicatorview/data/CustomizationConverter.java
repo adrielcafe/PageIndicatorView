@@ -8,8 +8,6 @@ public class CustomizationConverter {
 
     public static AnimationType getAnimationType(int position) {
         switch (position) {
-            case 0:
-                return AnimationType.NONE;
 
             case 1:
                 return AnimationType.COLOR;
@@ -45,8 +43,6 @@ public class CustomizationConverter {
 
     public static Orientation getOrientation(int position) {
         switch (position) {
-            case 0:
-                return Orientation.HORIZONTAL;
 
             case 1:
                 return Orientation.VERTICAL;
@@ -60,9 +56,6 @@ public class CustomizationConverter {
         switch (position) {
             case 0:
                 return RtlMode.On;
-
-            case 1:
-                return RtlMode.Off;
 
             case 2:
                 return RtlMode.Auto;
